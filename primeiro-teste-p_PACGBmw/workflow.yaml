@@ -1,0 +1,14 @@
+schema: workflow/2022.04
+name: Primeiro teste
+settings:
+  error_notification: true
+triggers:
+- id: hi_4EHXVDZ
+steps:
+- namespace: node
+  runtime: nodejs18.x
+  uses: "./node/entry.js"
+- namespace: node_1
+  runtime: nodejs18.x
+  uses: "./node_1/entry.js"
+
