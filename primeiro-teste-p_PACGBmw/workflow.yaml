@@ -11,4 +11,13 @@ steps:
 - namespace: node_1
   runtime: nodejs18.x
   uses: "./node_1/entry.js"
+- namespace: get_all_records
+  runtime: nodejs18.x
+  uses: data_stores-get-all-records@0.0.2
+  props:
+    dataStore:
+      storeId: ds_Mwuewl
+- namespace: node_2
+  runtime: nodejs18.x
+  uses: "./node_2/entry.js"
 
